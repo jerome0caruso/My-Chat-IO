@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Chat IO</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+    <div class="login-container">
+        <header>
+            <h1>MY CHAT IO</h1>
+        </header>
+        <main class="inner-container">
+            <form action="chat.html">
+                <div class="input-container">
+                    <label for="chatroom">User Name</label>
+                    <input type="text" class="user-input" id="user-input" name="user-input" placeholder="Enter username..." required/>
+                </div>
+                <div class="select-container">
+                    <label for="chatroom">Room</label>
+						<select name="chatroom" id="chatroom" class="chatroom">
+							<option value="JavaScript">JavaScript</option>
+							<option value="Python">Python</option>
+							<option value="PHP">PHP</option>
+							<option value="C#">C#</option>
+							<option value="Ruby">Ruby</option>
+							<option value="Java">Java</option>
+						</select>
+                </div>
+                <div>
+                    <button type="submit" class="login-btn" id="login-btn">Join Chat</button>
+                </div>
+
+            </form>
+        </main>
+    </div>
 </body>
 </html>
